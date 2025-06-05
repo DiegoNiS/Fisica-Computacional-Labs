@@ -5,7 +5,7 @@ R = 6.371e6;     % radio de la Tierra (m)
 
 % Condiciones iniciales
 r0 = [0; R + 1e6];      % posición inicial (100 km sobre la Tierra)
-v0 = [7500; 1000];         % velocidad inicial (m/s) - ajusta esto para ver diferentes trayectorias
+v0 = [7500; 1000];      % velocidad inicial (m/s) - ajusta esto para ver diferentes trayectorias
 
 % Tiempo
 dt = 1;                 % paso de tiempo (s)

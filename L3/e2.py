@@ -1,4 +1,3 @@
-# Problema de simulacion del sistema de los 3 cuerpos Fisica
 import matplotlib.pyplot as plt
 import numpy as np
 import math
@@ -19,7 +18,6 @@ y1 = center1[1] + r1 * np.sin(theta)
 x2 = center2[0] + r2 * np.cos(theta)
 y2 = center2[1] + r2 * np.sin(theta)
 
-# Generar las funciones a(x, y), a(x, y) de aceleracion:
 def ax(x, y):
     x1 = x - center1[0]
     y1 = y - center1[1]
@@ -75,17 +73,10 @@ vy = -0.3
 nave1 = simulate_trajectory(x, y, vx, vy, dt, t_max)
 nave2 = simulate_trajectory(x+0.01, y, vx, vy, dt, t_max)
 
-
-print("Momento de graficar")
 fig, ax = plt.subplots()
 ax.set_aspect('equal')
 ax.plot(x1, y1, color='black', label='C1')
 ax.plot(x2, y2, color='black', label='C2')
-
-print("Graficando los puntos")
-
-print(len(nave1[0]))
-print(len(nave1[1]))
 
 ax.plot(nave1[0], nave1[1], color='blue', label='Nave 1')
 ax.plot(nave2[0], nave2[1], color='red', label='Nave 2')

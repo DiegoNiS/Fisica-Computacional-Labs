@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 k = 1
 m = 2
-h = 0.1  # paso de tiempo
+h = 0.1
 tfin = 30
 
 t = 0
@@ -18,7 +18,7 @@ pa = []
 
 
 while t <= tfin:
-    a = -k * x / m #armonico(x, k, m)
+    a = -k * x / m 
     v = v + h * a
     x = x + h * v
     t = t + h

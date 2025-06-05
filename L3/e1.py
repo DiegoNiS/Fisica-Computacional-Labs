@@ -1,4 +1,3 @@
-# Problema de simulacion del sistema de los 3 cuerpos Fisica
 import matplotlib.pyplot as plt
 import numpy as np
 import math
@@ -8,19 +7,15 @@ r1 = 1.5
 r2 = 1.5
 b = 2
 c = 3
-
-
 center1 = (-b, c)
 center2 = (b, -c)
 n_points = 100
 theta = np.linspace(0, 2 * np.pi, n_points)
 x1 = center1[0] + r1 * np.cos(theta)
 y1 = center1[1] + r1 * np.sin(theta)
-
 x2 = center2[0] + r2 * np.cos(theta)
 y2 = center2[1] + r2 * np.sin(theta)
 
-# Generar las funciones a(x, y), a(x, y) de aceleracion:
 def ax(x, y):
     x1 = x - center1[0]
     y1 = y - center1[1]
@@ -41,7 +36,6 @@ def ay(x, y):
     sin_theta1 = y1 / r1
     sin_theta2 = y2 / r2
     return -1 / r1**2 * sin_theta1 - 1 / r2**2 * sin_theta2
-
 
 def simulate_trajectory(x, y, vx, vy, dt, t_max):
     positions = []

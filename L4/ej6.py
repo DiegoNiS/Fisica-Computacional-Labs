@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import math
 
-k = 0.1          # sin resorte
-m = 0.2        # masa en kg
-c = 0.5        # fricción viscosa
-h = 0.01       # paso de tiempo
-tfin = 60     # duración de la simulación
+k = 0.1  
+m = 0.2  
+c = 0.5  
+h = 0.01 
+tfin = 60 
 
 t = 0
 x = 0
@@ -35,7 +35,6 @@ gamma = c / (2 * m)
 print(f"w_0 = {omega_0:.4f}")
 print(f"Y  = {gamma:.4f}")
 
-# Evaluación del régimen
 if gamma**2 < omega_0**2:
     print("Sistema subamortiguado (oscilatorio)")
 elif gamma**2 == omega_0**2:

@@ -1,33 +1,28 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Parámetros
 m1 = 1
 m2 = 1
 l = 1
 n = 2
 
-k1 = m1 * l**2  # k1 = 1
-k2 = m2 * n**2  # k2 = 4
+k1 = m1 * l**2  
+k2 = m2 * n**2  
 
-# Condiciones iniciales
 x0 = 1
 vx0 = 2.3
 y0 = 1
 vy0 = 0
 
-# Parámetros de simulación
-h = 0.001  # paso de tiempo pequeño para mayor precisión
+h = 0.001  
 tfin = 20
 t = np.arange(0, tfin, h)
 
-# Inicialización de listas
 x = [x0]
 vx = [vx0]
 y = [y0]
 vy = [vy0]
 
-# Integración con método de Euler simple
 for i in range(len(t)-1):
     ax = -k1/m1 * x[-1]
     ay = -k2/m2 * y[-1]
@@ -44,7 +39,6 @@ for i in range(len(t)-1):
     vy.append(vy_new)
     y.append(y_new)
 
-# Graficar Lissajous
 plt.figure(figsize=(8,8))
 plt.plot(x, y, color='purple')
 plt.title(f'Figura de Lissajous para l={l}, n={n}')
