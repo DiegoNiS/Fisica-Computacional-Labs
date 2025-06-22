@@ -41,21 +41,3 @@ plt.xlabel('x (cm)')
 plt.ylabel('y (cm)')
 plt.grid(True)
 plt.show()
-
-
-
-# def plot_field(Ex, Ey, title):
-#     plt.figure()
-#     plt.quiver(X, Y, Ex, Ey)
-#     plt.scatter(charges_pos[:,0], charges_pos[:,1], s=100)
-#     plt.title(title)
-#     plt.xlabel('x (cm)')
-#     plt.ylabel('y (cm)')
-#     plt.axis('square')
-#     plt.grid(True)
-#     plt.legend()
-#     plt.show()
-
-# charges_A = np.array([1, 1, 1, 1])
-# Ex, Ey = campo_electrico(charges_A, charges_pos, X, Y)
-# plot_field(Ex, Ey, 'Campo eléctrico: todas las cargas positivas')

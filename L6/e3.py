@@ -15,7 +15,7 @@ sentido = +1  # Inciso (a): corriente hacia +z
 # sentido = -1  # Inciso (b): corriente hacia -z ← descomenta esta línea para inciso (b)
 
 # --- Coordenadas de los n vértices del triángulo equilátero centrado en el origen ---
-n = 3
+n = 6
 radio = 3  # puedes ajustar este radio si quieres un triángulo más grande
 angulos = np.linspace(0, 2*np.pi, n, endpoint=False)
 x_v = radio * np.cos(angulos)

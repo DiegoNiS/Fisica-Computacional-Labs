@@ -1,11 +1,3 @@
-"""
-Campo magnético en un triángulo equilátero (modelo simple tipo alambre infinito)
-Visualización en 2D usando flechas (campo vectorial)
-
-(a) Corriente hacia +z (flechas CCW alrededor de cada vértice) ← ACTIVO
-(b) Corriente hacia -z (flechas CW alrededor de cada vértice)  ← descomenta la línea indicada
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -22,8 +14,8 @@ coefHelp = 0.1
 sentido = +1  # Inciso (a): corriente hacia +z
 # sentido = -1  # Inciso (b): corriente hacia -z ← descomenta esta línea para inciso (b)
 
-# --- Coordenadas de los 3 vértices del triángulo equilátero centrado en el origen ---
-n = 6
+# --- Coordenadas de los n vértices del triángulo equilátero centrado en el origen ---
+n = 4
 radio = 3  # puedes ajustar este radio si quieres un triángulo más grande
 angulos = np.linspace(0, 2*np.pi, n, endpoint=False)
 x_v = radio * np.cos(angulos)

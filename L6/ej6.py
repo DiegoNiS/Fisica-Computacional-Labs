@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 mu0 = 4 * np.pi * 1e-7  # permeabilidad del vacío
 I = 1.0                 # corriente en cada anillo
 R = 1.0                 # radio de cada anillo
-d = 0.4             # distancia entre anillos
-N = 30                   # número de anillos (ímpares para que haya uno centrado)
+d = 0.4                 # distancia entre anillos
+N = 30                  # número de anillos (ímpares para que haya uno centrado)
 
 # Posiciones de los centros de los anillos
 centros = np.linspace(-d*(N//2), d*(N//2), N)
